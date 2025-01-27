@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusief Aanbod - Laatste Kans!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7e6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            background-color: #ff4500;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff4500;
+            font-size: 28px;
+        }
+
+        p {
+            margin: 15px 0;
+            color: #555;
+        }
+
+        .price {
+            font-size: 22px;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: #fffae6;
+            border-left: 5px solid #ff4500;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #2ecc71;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #27ae60;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        LAATSTE KANS - Sluit Deze Pagina Niet!
+    </div>
+
+    <div class="container">
+        <h1>⚡ Een Speciale Aanbieding Alleen Voor Jou! ⚡</h1>
+
+        <p>
+            We begrijpen dat je het vorige aanbod hebt afgewezen, maar we willen ervoor zorgen dat je de kans
+            niet mist om je leven te transformeren.
+        </p>
+
+        <div class="highlight">
+            <p>
+                <strong>✨ Beperkte tijd: </strong>
+                Zorg nu voor de gids <em>"Manifesteren van Wonderen"</em> voor slechts
+                <span class="price">€7</span>!
+            </p>
+        </div>
+
+        <p>✔ Geloof ons, dit wordt de beste beslissing die je vandaag zult nemen!</p>
+
+        <p>⏳ <strong>Let op:</strong> Dit exclusieve aanbod verdwijnt zodra je deze pagina sluit.
+            Stel het niet uit!
+        </p>
+
+        <p class="footer">
+            Slechts <strong>€7</strong> voor een buitengewone transformatie.<br>
+            Wacht niet langer!
+        </p>
+
+        <!-- HOTMART - Sales Funnel Widget -->
+        <div id="hotmart-sales-funnel"></div>
+
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+        </script>
+        <!-- HOTMART - Sales Funnel Widget -->
+    </div>
+</body>
+
+</html>
