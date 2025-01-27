@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Offerta imperdibile per garantire la tua protezione spirituale e quella della tua famiglia. Solo 17€, ultima opportunità!">
+    <title>Ultima Opportunità – Protezione Spirituale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .alert {
+            background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d84315;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        .cta-button {
+            display: block;
+            text-align: center;
+            background-color: #388e3c;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px auto;
+            max-width: 300px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2e7d32;
+        }
+
+        .price {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #e53935;
+            margin: 20px 0;
+        }
+
+        .testimonial {
+            background-color: #f1f8e9;
+            border-left: 5px solid #388e3c;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+            color: #757575;
+        }
+
+        .warning {
+            text-align: center;
+            font-weight: bold;
+            color: #d32f2f;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .countdown {
+            text-align: center;
+            font-size: 18px;
+            color: #f44336;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert">🔔 ULTIMA OPPORTUNITÀ: Non chiudere questa pagina, o perderai questo sconto esclusivo!</div>
+
+    <div class="container">
+        <h1>💎 Ora è il tuo turno di proteggere ciò che ami di più!</h1>
+
+        <p>Sappiamo quanto ami la tua famiglia e le tue benedizioni. Per questo motivo, abbiamo preparato un'offerta IMPERDIBILE per garantirti la protezione spirituale necessaria, ma a un prezzo molto inferiore!</p>
+
+        <div class="price">
+            🚨 Da <strike>97 €</strike> a soli <span style="color: #388e3c;">17 €!</span>
+        </div>
+
+        <div class="countdown">⚠ Offerta valida per solo <span id="countdown-timer">3 minuti</span>. Approfitta ora!</div>
+
+        <div class="testimonial">
+            "Non ho pensato due volte ad accettare l'offerta! Oggi sento la presenza divina che protegge la mia casa. Grazie!" – Christian Bellucci
+        </div>
+
+        <div id="hotmart-sales-funnel"></div>
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+
+            // Timer per il conto alla rovescia
+            let timeLeft = 180;
+            const timerElement = document.getElementById('countdown-timer');
+            const countdown = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timeLeft--;
+
+                if (timeLeft < 0) {
+                    clearInterval(countdown);
+                    timerElement.textContent = "Ultima Opportunità!";
+                }
+            }, 1000);
+        </script>
+
+        <p class="warning">⚠ Questa è l'ultima opportunità per garantire la tua protezione spirituale a questo prezzo simbolico. Dopo aver chiuso questa pagina, l'offerta non sarà più disponibile.</p>
+    </div>
+
+    <footer>
+        © 2025 - Tutti i diritti riservati.
+    </footer>
+</body>
+</html>
