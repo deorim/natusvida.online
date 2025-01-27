@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Offre incroyable pour garantir votre protection spirituelle et celle de votre famille. Seulement 17€, dernière chance !">
+    <title>Dernière Chance – Protection Spirituelle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .alert {
+            background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d84315;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        .cta-button {
+            display: block;
+            text-align: center;
+            background-color: #388e3c;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px auto;
+            max-width: 300px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2e7d32;
+        }
+
+        .price {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #e53935;
+            margin: 20px 0;
+        }
+
+        .testimonial {
+            background-color: #f1f8e9;
+            border-left: 5px solid #388e3c;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+            color: #757575;
+        }
+
+        .warning {
+            text-align: center;
+            font-weight: bold;
+            color: #d32f2f;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .countdown {
+            text-align: center;
+            font-size: 18px;
+            color: #f44336;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert">🔔 DERNIÈRE CHANCE : Ne fermez pas cette page, sinon vous perdrez cette offre exclusive !</div>
+
+    <div class="container">
+        <h1>💎 À vous maintenant de protéger ce que vous aimez le plus !</h1>
+
+        <p>Nous savons que vous tenez à votre famille et à vos bénédictions. C'est pourquoi nous avons préparé une offre INCONTOURNABLE pour vous permettre de garantir la protection spirituelle nécessaire, mais à un prix beaucoup plus bas !</p>
+
+        <div class="price">
+            🚨 De <strike>97 €</strike> pour seulement <span style="color: #388e3c;">17 € !</span>
+        </div>
+
+        <div class="countdown">⚠ Offre valable seulement pendant <span id="countdown-timer">3 minutes</span>. Profitez-en maintenant !</div>
+
+        <div class="testimonial">
+            "Je n'ai pas hésité une seconde à accepter l'offre ! Aujourd'hui, je sens la présence divine protéger ma maison. Gratitude !" – Jean Cassel
+        </div>
+
+       
+        <div id="hotmart-sales-funnel"></div>
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+
+            // Timer pour la Compte à Rebours
+            let timeLeft = 180;
+            const timerElement = document.getElementById('countdown-timer');
+            const countdown = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timeLeft--;
+
+                if (timeLeft < 0) {
+                    clearInterval(countdown);
+                    timerElement.textContent = "Dernière Chance !";
+                }
+            }, 1000);
+        </script>
+
+        <p class="warning">⚠ C'est votre dernière chance de garantir votre protection spirituelle à ce prix symbolique. Après avoir quitté cette page, l'offre ne sera plus disponible.</p>
+    </div>
+
+    <footer>
+        © 2025 - Tous droits réservés.
+    </footer>
+</body>
+</html>

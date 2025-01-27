@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offre Exclusive - Dernière Chance !</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7e6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            background-color: #ff4500;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff4500;
+            font-size: 28px;
+        }
+
+        p {
+            margin: 15px 0;
+            color: #555;
+        }
+
+        .price {
+            font-size: 22px;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: #fffae6;
+            border-left: 5px solid #ff4500;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #2ecc71;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #27ae60;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        DERNIÈRE CHANCE - Ne Fermez Pas Cette Page !
+    </div>
+
+    <div class="container">
+        <h1>⚡ Une Offre Spéciale Rien Que Pour Vous ! ⚡</h1>
+
+        <p>
+            Nous comprenons que vous avez refusé l'offre précédente, mais nous voulons nous assurer que vous ne manquerez pas
+            l'opportunité de transformer votre vie.
+        </p>
+
+        <div class="highlight">
+            <p>
+                <strong>✨ Pour un temps limité : </strong>
+                Obtenez dès maintenant le guide <em>"Manifester des Miracles"</em> pour seulement
+                <span class="price">7 €</span> !
+            </p>
+        </div>
+
+        <p>✔ Croyez-moi, ce sera la meilleure décision que vous prendrez aujourd'hui !</p>
+
+        <p>⏳ <strong>Mais attention :</strong> Cette offre exclusive disparaît dès que vous fermez cette page.
+            Ne remettez pas à plus tard !
+        </p>
+
+        
+
+        <p class="footer">
+            Seulement <strong>7 €</strong> pour une transformation extraordinaire.<br>
+            N'attendez plus !
+        </p>
+
+        <!-- HOTMART - Widget du Funnel de Ventes -->
+        <div id="hotmart-sales-funnel"></div>
+
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+        </script>
+        <!-- HOTMART - Widget du Funnel de Ventes -->
+    </div>
+</body>
+
+</html>
