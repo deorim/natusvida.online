@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Siste sjanse til å låse opp dine skjulte velsignelser. Forvandle livet ditt med denne guddommelige muligheten.">
+    <title>Siste sjanse til å låse opp dine skjulte velsignelser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #ff5722, #ff9800);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #e53935;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #1e88e5;
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 15px 0;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .cta-button {
+            background-color: #43a047;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #388e3c;
+        }
+
+        .testimonial {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #43a047;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .testimonial strong {
+            color: #388e3c;
+        }
+
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #d32f2f;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">⚠️ SISTE SJANSE! Ikke gå glipp av denne guddommelige muligheten. Kun i dag!</div>
+
+    <div class="container">
+        <h1>Siste sjanse til å låse opp dine skjulte velsignelser</h1>
+
+        <p><strong>⚠️ VIKTIG! IKKE GÅ VÆK UDEN Å LÅSE OPP DINE VELSIGNELSER!</strong></p>
+
+        <p>Du har avvist Guds kall... og det gjør oss veldig triste.</p>
+
+        <blockquote>
+            💔 "Vi er dypt triste over at du har avvist muligheten til å fjerne de åndelige barrierene som hindrer dine velsignelser."
+        </blockquote>
+
+        <p>Men... det er fortsatt håp. 🙏 Gud er barmhjertig, og derfor tilbyr vi deg EN SISTE SJANSE til å få tilgang til de Åndelige Hemmelighetene for å Låse Opp Skjulte Velsignelser.</p>
+
+        <h2>🌟 Du vil lære:</h2>
+        <ul>
+            <li>Å fjerne blokkeringer som binder dine velsignelser.</li>
+            <li>Å motta velstand og helbredelse i ditt liv.</li>
+            <li>Å leve den mirakelplanen Gud har forberedt for deg.</li>
+        </ul>
+
+        <div class="countdown">⏳ Tilbudet går ut om: <span id="timer">05:00</span></div>
+        <div class="countdown">Fra 1 370 kr for Bare en symbolsk donasjon på 170 kr! </div>
+
+        <p>⚠ <strong>SISTE MULIGHET:</strong> Hvis du forlater denne siden igjen, vil ikke dette kallet bli gjentatt.</p>
+
+        <p>Klikk nå! Lås opp din velsignelse før det er for sent.</p>
+        <!-- HOTMART - Sales Funnel Widget -->
+        <div id="hotmart-sales-funnel"></div>
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+        </script>
+        <!-- HOTMART - Sales Funnel Widget -->
+        </div>
+
+        <p><strong>💡 "Hvis du hører hans stemme i dag, vær ikke hard i ditt hjerte." (Hebreerne 3:15)</strong></p>
+        
+    </div>
+
+    <footer>© 2025 - Alle rettigheter forbeholdt. Forvandle livet ditt i dag.</footer>
+
+    <script>
+        // Countdown Timer
+        function startCountdown(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    display.textContent = "Siste Mulighet";
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const fifteenMinutes = 5 * 60;
+            const display = document.querySelector('#timer');
+            startCountdown(fifteenMinutes, display);
+        };
+    </script>
+</body>
+</html>

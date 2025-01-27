@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uimotståelig tilbud for å sikre din åndelige beskyttelse og beskyttelse for familien din. Bare 17 NOK, siste mulighet!">
+    <title>Siste Mulighet – Åndelig Beskyttelse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .alert {
+            background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d84315;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        .cta-button {
+            display: block;
+            text-align: center;
+            background-color: #388e3c;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px auto;
+            max-width: 300px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2e7d32;
+        }
+
+        .price {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #e53935;
+            margin: 20px 0;
+        }
+
+        .testimonial {
+            background-color: #f1f8e9;
+            border-left: 5px solid #388e3c;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+            color: #757575;
+        }
+
+        .warning {
+            text-align: center;
+            font-weight: bold;
+            color: #d32f2f;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .countdown {
+            text-align: center;
+            font-size: 18px;
+            color: #f44336;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert">🔔 SISTE MULIGHET: Lukk ikke denne siden, ellers mister du denne eksklusive rabatten!</div>
+
+    <div class="container">
+        <h1>💎 Nå er det din tur til å beskytte det du elsker mest!</h1>
+
+        <p>Vi vet at du setter pris på familien din og velsignelsene dine. Derfor har vi laget et UIMOTSTÅELIG tilbud for at du kan sikre nødvendig åndelig beskyttelse, men til en mye lavere pris!</p>
+
+        <div class="price">
+            🚨 Fra <strike>970 kr</strike> for bare <span style="color: #388e3c;">170 kr!</span>
+        </div>
+
+        <div class="countdown">⚠ Tilbudet er gyldig i bare <span id="countdown-timer">3 minutter</span>. Benytt deg av det nå!</div>
+
+        <div class="testimonial">
+            "Jeg nølte ikke med å akseptere tilbudet! I dag føler jeg den guddommelige tilstedeværelsen som beskytter hjemmet mitt. Takk!" – David Malthe
+        </div>
+
+        <div id="hotmart-sales-funnel"></div>
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+
+            // Timer for nedtelling
+            let timeLeft = 180;
+            const timerElement = document.getElementById('countdown-timer');
+            const countdown = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timeLeft--;
+
+                if (timeLeft < 0) {
+                    clearInterval(countdown);
+                    timerElement.textContent = "Siste Mulighet!";
+                }
+            }, 1000);
+        </script>
+
+        <p class="warning">⚠ Dette er siste mulighet til å sikre din åndelige beskyttelse til denne symboliske prisen. Etter å ha lukket denne siden, vil tilbudet ikke være tilgjengelig.</p>
+    </div>
+
+    <footer>
+        © 2025 - Alle rettigheter forbeholdt.
+    </footer>
+</body>
+</html>
