@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Last chance to unlock your hidden blessings. Transform your life with this divine opportunity.">
+    <title>Last Chance to Unlock Your Hidden Blessings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #ff5722, #ff9800);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #e53935;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #1e88e5;
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 15px 0;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .cta-button {
+            background-color: #43a047;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #388e3c;
+        }
+
+        .testimonial {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #43a047;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .testimonial strong {
+            color: #388e3c;
+        }
+
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #d32f2f;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">⚠️ LAST CHANCE! Don’t miss this divine opportunity. Only today!</div>
+
+    <div class="container">
+        <h1>Last Chance to Unlock Your Hidden Blessings</h1>
+
+        <p><strong>⚠️ ATTENTION! DO NOT LEAVE WITHOUT UNLOCKING YOUR BLESSINGS!</strong></p>
+
+        <p>You have declined God’s call... and this deeply saddens us.</p>
+
+        <blockquote>
+            💔 "We are profoundly saddened that you have rejected your opportunity to remove the spiritual barriers blocking your blessings."
+        </blockquote>
+
+        <p>But... there is still hope. 🙏 God is merciful, and that’s why we’re giving you ONE LAST CHANCE to access the Spiritual Secrets to Unlock Hidden Blessings.</p>
+
+        <h2>🌟 You Will Learn:</h2>
+        <ul>
+            <li>Remove the blocks holding back your blessings.</li>
+            <li>Receive prosperity and healing in your life.</li>
+            <li>Live the miraculous plan God has prepared for you.</li>
+        </ul>
+
+
+        <div class="countdown">⏳ Offer expires in: <span id="timer">05:00</span></div>
+        <div class="countdown">From $137 to Just a symbolic donation of $17! <span></div>
+
+        <p>⚠ <strong>LAST OPPORTUNITY:</strong> If you leave this page again, this call WILL NOT BE REPEATED.</p>
+
+        <p>Click now! Claim your blessing before it’s too late.</p>
+        <!-- HOTMART - Sales Funnel Widget -->
+        <div id="hotmart-sales-funnel"></div>
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+        </script>
+        <!-- HOTMART - Sales Funnel Widget -->
+        <p><strong>💡 "Today, if you hear his voice, do not harden your hearts." (Hebrews 3:15)</strong></p>
+    </div>
+
+    <footer>© 2025 - All rights reserved. Transform Your Life Today.</footer>
+
+    <script>
+        // Countdown Timer
+        function startCountdown(duration, display) {
+            let timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    display.textContent = "Last Opportunity";
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const fiveMinutes = 5 * 60;
+            const display = document.querySelector('#timer');
+            startCountdown(fiveMinutes, display);
+        };
+    </script>
+</body>
+</html>

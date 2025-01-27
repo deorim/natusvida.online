@@ -1,0 +1,220 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Protect your family and blessings with the ultimate spiritual protection guide. Exclusive offer, grab it now!">
+    <title>Spiritual Protection – Protect Your Family and Blessings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .alert {
+            background-color: #ffeb3b;
+            color: #000;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #4a90e2;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 32px;
+        }
+
+        h2 {
+            margin: 20px 0;
+            font-size: 28px;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 18px;
+        }
+
+        ul li::before {
+            content: "✔";
+            color: #4a90e2;
+            position: absolute;
+            left: 0;
+        }
+
+        .bonus {
+            background-color: #fff;
+            padding: 15px;
+            border: 2px dashed #4a90e2;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .price {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #4a90e2;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+
+        .price span {
+            color: #ff0000;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .cta-button:hover {
+            background-color: #357ab8;
+        }
+
+        .warning {
+            text-align: center;
+            color: #ff0000;
+            font-weight: bold;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        #hotmart-sales-funnel {
+            margin-top: 20px;
+        }
+
+        .testimonial {
+            background-color: #eef;
+            border-left: 5px solid #4a90e2;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .countdown {
+            text-align: center;
+            font-size: 18px;
+            color: #ff0000;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert">ATTENTION - Do not close this page, we are sending the Product to your email.</div>
+
+    <div class="container">
+        <h2>🛡 Protect what is most precious: your life and your family!</h2>
+
+        <p>Did you know that the greatest blessings can be lost if they are not protected? Invisible spiritual attacks can interrupt God's plan for your life. But today, God gives you the power to shield everything you love!</p>
+
+        <h3>⚡ Why Do You Need Spiritual Protection?</h3>
+        <p>Imagine losing the blessings you prayed so hard to achieve. Every minute without protection can create openings for spiritual attacks. Don't let this happen to you or your family.</p>
+
+        <h3>🔑 With the "Spiritual Protection" guide, you will get:</h3>
+        <ul>
+            <li>Simple and powerful steps to protect your blessings and your family.</li>
+            <li>Tools to identify and close spiritual gaps in your life.</li>
+            <li>Wisdom to discern and combat spiritual attacks before they happen.</li>
+            <li>Peace and security knowing you are under divine protection.</li>
+        </ul>
+
+        <div class="bonus">
+            <h3>🎁 Exclusive Bonus:</h3>
+            <p>1️⃣ Spiritual Shielding Prayer: The prayer that forms a protective wall around you.</p>
+        </div>
+
+        <div class="testimonial">
+            <p>"Since I started applying these teachings, my family is more united and at peace. God truly protects what is His!" – Olivia Brown</p>
+        </div>
+
+        <div class="price">
+            <p>⏳ <strong>Exclusive Offer – From <strike>$97</strike> for just a contribution of <span>$27!</span></strong></p>
+            <p>All proceeds will be used to spread God's word!</p>
+        </div>
+
+        <div class="countdown">⚠ Only <span id="countdown-timer">5 minutes</span> left to take advantage of this offer!</div>
+
+        <!-- HOTMART - Sales Funnel Widget -->
+        <div id="hotmart-sales-funnel"></div>
+        <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+        <script>
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+
+            // Countdown Timer
+            let timeLeft = 300;
+            const timerElement = document.getElementById('countdown-timer');
+            const countdown = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timeLeft--;
+
+                if (timeLeft < 0) {
+                    clearInterval(countdown);
+                    timerElement.textContent = "Offer Expired!";
+                }
+            }, 1000);
+        </script>
+        <!-- HOTMART - Sales Funnel Widget -->
+
+        <p class="warning">⚠ IMPORTANT: This is your only chance to get this guide at this price. Don’t leave it for later. Your spiritual protection starts now.</p>
+    </div>
+
+    <footer>
+        © 2025 - All rights reserved.
+    </footer>
+</body>
+</html>
